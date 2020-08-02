@@ -4,6 +4,7 @@
 - Ethereum Blockchain
 - Smart Contracts with Solidity
 - Smart Contracts Unit Test
+- ERC-20
 - Development with Go
 
 ดูย้อนหลังได้ที่ https://fb.com/CodeBangkok/videos
