@@ -5,4 +5,5 @@
 - Smart Contracts with Solidity
 - Smart Contracts Unit Test
 - Development with Go
-https://www.facebook.com/CodeBangkok/videos
+
+ดูย้อนหลังได้ที่ https://www.facebook.com/CodeBangkok/videos
