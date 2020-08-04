@@ -15,16 +15,16 @@ import (
 )
 
 func main() {
-	client, err := ethclient.Dial("https://kovan.infura.io/v3/24595eef73ac4734b3dd3eea707a6f3c")
+	client, err := ethclient.Dial("")
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	myAccount := common.HexToAddress("0x008f9b59Eb93b9762f304992B94F65fCe0571776")
+	myAccount := common.HexToAddress("")
 	// checkEthBalance(*client, myAccount)
 	_ = myAccount
 
-	contractAddress := common.HexToAddress("0x899F7782AB089E7206769d028Ce51894dbA40813")
+	contractAddress := common.HexToAddress("")
 	bondCoinContract, err := bondcoin.NewBondcoin(contractAddress, client)
 	if err != nil {
 		log.Fatal(err)
@@ -32,12 +32,12 @@ func main() {
 
 	// checkBalance(*client, *bondCoinContract, myAccount)
 
-	privateKey, err := crypto.HexToECDSA("fa4613e7cca618a14acba25d131f466e68d3330010a639f5528635b6f4a7fb80")
+	privateKey, err := crypto.HexToECDSA("")
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	recipientAccount := common.HexToAddress("0x64c80aC601507c7864D9E31215b2E66824172C7b")
+	recipientAccount := common.HexToAddress("")
 	transfer(*client, *bondCoinContract, *privateKey, recipientAccount, *big.NewInt(100))
 }
 
